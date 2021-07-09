@@ -9,12 +9,14 @@ namespace Spryker\Zed\PaymentGuiExtension\Dependency\Plugin;
 
 use Generated\Shared\Transfer\QueryCriteriaTransfer;
 
+/**
+ * Provides ability to add criterias to the payment gui table query
+ *
+ * Use this plugin if you want to filter data in the payment table (ZED GUI)
+ */
 interface PaymentMethodTableQueryExpanderPluginInterface
 {
     /**
-     * Specification:
-     * - Plugin is triggered during query creation and allows to add custom criterias.
-     *
      * @api
      *
      * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
